@@ -1,0 +1,29 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:pink;
+}
+
+.container{
+    /*もとより小さくなる*/
+    max-width: 400px;
+}
+
+/*input要素のtype属性の値がtextの場合*/
+input[type=text],
+/*focusはそこが作業されているとき*/
+input[type=text]:focus{
+    color:#9abca4;
+    border:none;
+    /*rgbaで色の指定。最後のalpha値は0－1で透明度を調節*/
+    background:rgba(0,0,0,0.2);
+    max-width:400px;
+}
+
+.todos li{
+    background:#2c4b79;
+}
+
+.delete{
+    cursor:pointer;
+    color:orange;
+}

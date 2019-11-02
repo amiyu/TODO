@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--使用する言語（日本語はja）-->
+<html lang = "en"> 
+<head>
+    <meta charset ="UTF-8"> 
+    <!--端末ごとのサイズに応じてflexibleな表示ができる。細かい表示統一はやりずらい-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--最新モードで動く-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Boostrap(典型が保存されている)-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class ="text-center text-light my-4">
+            <h1 class ="mb-4"> Todo List</h1>
+            <!--入力するフォーム作る-->
+            <form class="search">
+                <input type="text" class="form-control m-auto" name ="search" placeholder="Search KeyWord">
+            </form>
+        </header>
+
+        <ul class ="list-group todos mx-auto text-light">
+            <!--jsでリストを追加する-->
+        </ul>
+
+        <form class="add text-center my-4">
+            <!--labelはinputと一緒のに使われることが多い-->
+            <label class="text-light">ADDING TASK</label>
+            <!--inputのtype属性でtextを指定すると一行テキストボックス作成 sizeでフォーム部分のサイズ指定、maxlengthで入植最大文字数の指定-->
+            <input type="text" class ="form-control m-auto" name="add" placeholder="New Text">
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
